@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* TipTap editor styles */
+.tiptap {
+  outline: none;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #adb5bd;
+  pointer-events: none;
+  height: 0;
+}
+
+.tiptap pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+.tiptap pre code {
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+.tiptap code {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9em;
+}
+
+.tiptap blockquote {
+  border-left: 3px solid #1976d2;
+  padding-left: 16px;
+  margin-left: 0;
+  font-style: italic;
+  color: #666;
+}
+
+.tiptap img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.tiptap h2 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.tiptap h3 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.tiptap ul,
+.tiptap ol {
+  padding-left: 24px;
+}
+
+.tiptap a {
+  color: #1976d2;
+  text-decoration: underline;
+}
+
+/* hljs syntax highlighting in code blocks */
+.hljs-comment,
+.hljs-quote { color: #6a9955; }
+.hljs-keyword,
+.hljs-selector-tag { color: #569cd6; }
+.hljs-string,
+.hljs-attr { color: #ce9178; }
+.hljs-number,
+.hljs-literal { color: #b5cea8; }
+.hljs-built_in,
+.hljs-type { color: #4ec9b0; }
+.hljs-title,
+.hljs-section { color: #dcdcaa; }
+.hljs-name,
+.hljs-tag { color: #569cd6; }
+.hljs-variable { color: #9cdcfe; }
+.hljs-template-variable { color: #9cdcfe; }
+.hljs-regexp { color: #d16969; }
+.hljs-addition { color: #b5cea8; }
+.hljs-deletion { color: #ce9178; }
+
+/* Note answer content shares same styles */
+.note-answer-content pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+.note-answer-content code {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9em;
+}
+
+.note-answer-content pre code {
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+.note-answer-content blockquote {
+  border-left: 3px solid #1976d2;
+  padding-left: 16px;
+  margin-left: 0;
+  font-style: italic;
+}
+
+.note-answer-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.note-answer-content a {
+  color: #1976d2;
+}
